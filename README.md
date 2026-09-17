@@ -1,4 +1,4 @@
-# KBMS Knowledge Platform for WordPress
+# WordPress Knowledge Base & Knowledge Management System (KBMS)
 
 KBMS 0.1.0 is a security-first WordPress knowledge-management foundation. It adds governed knowledge spaces, hierarchical knowledge items, workflow and verification services, permission-scoped search, typed relationships, bounded graph expansion, feedback, privacy controls, operational health checks, and an optional grounded AI pipeline.
 
