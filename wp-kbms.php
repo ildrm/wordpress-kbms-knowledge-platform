@@ -1,12 +1,13 @@
 <?php
 /**
  * Plugin Name: KBMS Knowledge Platform
- * Plugin URI:  https://example.org/wp-kbms
+ * Plugin URI:  https://github.com/ildrm/wordpress-kbms-knowledge-platform
  * Description: Governed, permission-aware knowledge management for WordPress.
  * Version:     0.1.0
  * Requires at least: 6.5
  * Requires PHP: 8.1
- * Author:      KBMS Contributors
+ * Author:      Shahin Ilderemi
+ * Author URI:  https://ildrm.com
  * License:     GPL-2.0-or-later
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain: wp-kbms
