@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<ruleset name="KBMS">
+  <description>KBMS coding standards.</description>
+  <file>wp-kbms.php</file>
+  <file>uninstall.php</file>
+  <file>src</file>
+  <exclude-pattern>vendor/*</exclude-pattern>
+  <arg name="extensions" value="php"/>
+  <arg value="ps"/>
+  <arg name="warning-severity" value="0"/>
+  <rule ref="WordPress">
+    <!-- PSR-4 class names and camelCase service APIs are deliberate project conventions. -->
+    <exclude name="WordPress.Files.FileName"/>
+    <exclude name="WordPress.NamingConventions"/>
+    <exclude name="WordPress.PHP.YodaConditions"/>
+    <exclude name="Squiz.Commenting"/>
+    <exclude name="Generic.Commenting.DocComment"/>
+    <exclude name="Universal.NamingConventions.NoReservedKeywordParameterNames"/>
+    <exclude name="WordPress.Security.EscapeOutput.ExceptionNotEscaped"/>
+  </rule>
+  <rule ref="WordPress.WP.Capabilities">
+    <properties>
+      <property name="custom_capabilities" type="array">
+        <element value="read_kbms_item"/>
+        <element value="read_private_kbms_items"/>
+        <element value="edit_kbms_item"/>
+        <element value="edit_kbms_items"/>
+        <element value="edit_others_kbms_items"/>
+        <element value="edit_published_kbms_items"/>
+        <element value="publish_kbms_items"/>
+        <element value="delete_kbms_item"/>
+        <element value="delete_kbms_items"/>
+        <element value="delete_others_kbms_items"/>
+        <element value="delete_published_kbms_items"/>
+        <element value="manage_kbms"/>
+        <element value="manage_kbms_spaces"/>
+        <element value="manage_kbms_workflows"/>
+        <element value="review_kbms_items"/>
+        <element value="verify_kbms_items"/>
+        <element value="export_kbms_items"/>
+        <element value="use_kbms_ai"/>
+        <element value="view_kbms_audit_log"/>
+      </property>
+    </properties>
+  </rule>
+  <rule ref="PHPCompatibilityWP">
+    <properties>
+      <property name="testVersion" value="8.1-"/>
+    </properties>
+  </rule>
+</ruleset>

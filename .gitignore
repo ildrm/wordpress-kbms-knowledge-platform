@@ -1,0 +1,10 @@
+/vendor/
+/node_modules/
+/.phpunit.cache/
+/coverage/
+/build/
+/*.zip
+/.env
+/.idea/
+/.vscode/
+*.log

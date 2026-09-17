@@ -1,0 +1,12 @@
+.kbms-admin { --kbms-primary: #3157d5; --kbms-surface: #fff; --kbms-border: #dcdcde; --kbms-muted: #50575e; max-width: 76rem; }
+.kbms-admin .kbms-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr)); gap: 1rem; margin-block-start: 1.5rem; }
+.kbms-admin .kbms-admin-grid { display: grid; grid-template-columns: minmax(18rem, 1fr) minmax(24rem, 2fr); gap: 1rem; align-items: start; }
+.kbms-admin .kbms-card label { display: inline-block; margin-block-end: .3rem; }
+.kbms-admin .kbms-card { background: var(--kbms-surface); border: 1px solid var(--kbms-border); border-radius: .5rem; padding: 1.2rem; box-shadow: 0 1px 2px rgb(0 0 0 / 4%); }
+.kbms-admin .kbms-card h2 { color: var(--kbms-muted); font-size: .85rem; letter-spacing: .04em; margin: 0 0 .75rem; text-transform: uppercase; }
+.kbms-admin .kbms-card strong { color: var(--kbms-primary); font-size: 2rem; line-height: 1; }
+.kbms-admin input:focus-visible, .kbms-admin textarea:focus-visible, .kbms-admin a:focus-visible { outline: 3px solid #7ba2ff; outline-offset: 2px; }
+@media (prefers-color-scheme: dark) { .kbms-admin { --kbms-surface: #202124; --kbms-border: #4a4d52; --kbms-muted: #c3c4c7; } }
+@media (max-width: 782px) { .kbms-admin .form-table th { padding-block-end: .25rem; } }
+@media (max-width: 782px) { .kbms-admin .kbms-admin-grid { grid-template-columns: 1fr; } }
+[dir="rtl"] .kbms-admin .kbms-card { text-align: start; }
